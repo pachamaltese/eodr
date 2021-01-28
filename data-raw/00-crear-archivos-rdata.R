@@ -17,7 +17,7 @@ use_data(actividad)
 #use_data(n[1])
 
 try(dir.create("inst"))
-try(dir.create("inst/data"))
+try(dir.create("inst/extdata"))
 con <- dbConnect(SQLite(), "inst/data/eod2017.sqlite")
 
 for (i in seq_along(finp)) {
