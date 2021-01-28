@@ -18,8 +18,8 @@ use_data(n[1])
 
 
 try(dir.create("inst"))
-try(dir.create("inst/data"))
-con <- dbConnect(SQLite(), "inst/data/eod2017.sqlite")
+try(dir.create("inst/exdata"))
+con <- dbConnect(SQLite(), "inst/exdata/eod2017.sqlite")
 
 for (i in seq_along(finp)) {
   d <-read_delim(finp[i], delim = "\t")
